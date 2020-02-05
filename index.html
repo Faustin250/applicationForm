@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andela Application</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Andela Stack Program Application</h1>
+
+        <p id="description">Please provide your details by filling out the form below</p>
+
+        <div class="row">
+            <div class="col-md-8 form_field">
+
+                <form id="survey-form">
+
+                    <div class="form-group">
+
+                        <label id="name-label" for="name">Name</label>
+                        <input type="name" name="name" class="form-control" id="name" aria-describedby="emailHelp"
+                            placeholder="Enter your names" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email address</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter you email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="number-label" for="number">How old are you?</label>
+                        <input type="number" name="age" min="18" max="30" class="form-control" id="number"
+                            placeholder="Your age must be between 18 and 30 years old" required>
+                    </div>
+
+                    <div class="form-group">
+                        <p>What is your level of education</p>
+                        <select id="dropdown" class="form-control" required="">
+                            <option value="">Select one below</option>
+                            <option value="student">High School Diploma</option>
+                            <option value="job">Bachelor degree</option>
+                            <option value="learner">Masters degree</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p>what is your experience with coding </p>
+                        <label class="form-check-label" for="radio1">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+                            Never coded before
+                        </label> <br>
+                        <label class="form-check-label" for="radio2">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option1">
+                            Basic level
+                        </label> <br>
+                        <label class="form-check-label" for="radio2">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option1">
+                            Medium level
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>
+                            What is your profession
+                        </p>
+                        <select id="dropdown" class="form-control" required="">
+                            <option value="">Select an option</option>
+                            <option value="engineer">Software engineer</option>
+                            <option value="it">IT Professional</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <p>
+                            Tell us if you know any of these languages
+                            (Check all that apply)
+                        </p>
+
+                        <label><input value="HTML" type="checkbox">
+                            HTML</label> <br>
+
+                        <label>
+                            <input value="CSS" type="checkbox">
+                            CSS</label> <br>
+
+                        <label>
+                            <input value="CSS" type="checkbox">
+                            Javascript</label> <br>
+                        <label>
+                            <input value="CSS" type="checkbox">
+                            None</label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <p>Why would you want to join our program</p>
+                        <textarea class="input-textarea" placeholder="Tell us why you want to join us"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit">
+                            SUBMIT
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
